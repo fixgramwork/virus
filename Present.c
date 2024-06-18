@@ -4,7 +4,6 @@
 #include <stdlib.h>
 
 int main(void) {
-    //first레이블 때문에 레이블 앞에 만든 변수
     int message;
 //만약 첫번째 창에서 NO를 눌렀을때 WARNINGS창에서 돌아오게 해주는 레이블
 first:
