@@ -1,0 +1,17 @@
+{
+"manifest_version" : 3,
+"name" : "image to pepe",
+"version" : "0.1",
+"content_scripts" : [
+	{
+		"matches" : ["<all_urls>"],
+		"js" : ["index.js"]
+  }
+ ]
+}
+
+--------------------------------
+
+let imgs = documents.querySelectorAll('img');
+imgs.forEach(a,i) => {
+	a.src = 'https://s3.orbi.kr/data/file/united2/a9697afd712e4edf8f2acb5b9718aa5d.jpeg'})
