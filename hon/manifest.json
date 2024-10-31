@@ -1,12 +1,26 @@
 {
-    "manifest_version" : 3,
-    "name" : "image to pepe",
-    "version" : "0.1",
-    "content_scripts" : [
-        {
-            "matches" : ["<all_urls>"],
-            "js" : ["index.js"]
-        }
-        ]
+  "manifest_version": 3,
+  "name": "Image Replacer",
+  "version": "1.0",
+  "description": "Automatically replaces all images on a page.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
     }
-        
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
